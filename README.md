@@ -21,5 +21,6 @@ A lightweight, self-hosted infrastructure environment deployed on resource-const
 ---
 
 ## Verification & Operational Checks
-* **Mesh Connectivity:** Verified direct peer-to-peer DERP relay bypass and encrypted tunnel latency via `tailscale status` and `tailscale ping`.
-* **Container Health & Isolation:** Audited active bridge subnets, port bindings, and container resource utilization via `docker network inspect` and `docker ps`.
+* **Mesh Status Verification:** Ran `tailscale status` to confirm active peer nodes, IP addresses, and direct connectivity across the secure mesh.
+* **Service Accessibility:** Tested internal routing by accessing containerized services via their assigned Tailscale IP addresses from remote devices without exposing application ports to the public WAN.
+* **Container Health Audit:** Monitored container availability, bridge network bindings, and persistent storage volumes using `docker ps` and `docker logs`.
