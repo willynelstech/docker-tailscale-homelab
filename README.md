@@ -6,8 +6,8 @@ A lightweight, self-hosted infrastructure environment deployed on resource-const
 ---
 
 ## Architecture & Stack
-* **Host Environment:** Local Linux Host running Docker Engine & Docker Compose
-* **Overlay Network:** Tailscale (WireGuard-encrypted mesh VPN) providing point-to-point peer connectivity and private DNS resolution (MagicDNS)
+* **Host Environment:** Local Linux host running Docker
+* **Overlay Network:** Tailscale providing point-to-point peer connectivity and private DNS resolution
 * **Container Networking:** Custom Docker bridge networks isolating inter-container traffic from the host's physical LAN interface
 * **Security Model:** Zero Trust / Identity-based access control (no inbound firewall port forwarding on the edge router)
 
