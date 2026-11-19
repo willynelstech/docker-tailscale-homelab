@@ -12,7 +12,7 @@ To optimize performance and prevent disk I/O bottlenecks on laptop hardware, sto
 * **Internal NVMe/SATA SSD:** Houses the host Linux OS, Docker Engine, Portainer, and database volumes (PostgreSQL/Redis for Immich, metadata/transcode cache for Jellyfin) to ensure fast UI responsiveness and database reads/writes.
 * **Internal HDD:** Dedicated bulk storage for Immich photo and video uploads, keeping large personal archives off the primary OS drive.
 * **External USB SSD:** Dedicated storage for Jellyfin movie and TV show libraries, providing fast sequential read speeds for video streaming.
-* **Network Layer (Tailscale Mesh VPN):** Connects the host laptop and remote client devices over encrypted WireGuard tunnels (`100.x.y.z` tailnet), keeping all web interfaces (`Portainer`, `Immich`, `Jellyfin`) completely closed to the public WAN.
+* **Network Layer (Tailscale Mesh VPN):** Connects the host laptop and remote client devices over encrypted WireGuard tunnels (`100.x.x.x` tailnet), keeping all web interfaces (`Portainer`, `Immich`, `Jellyfin`) completely closed to the public WAN.
 
 ---
 
